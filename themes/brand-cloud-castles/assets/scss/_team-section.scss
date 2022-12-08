@@ -1,0 +1,117 @@
+.team-section{
+    background-color: #F3FBFF;
+    padding-bottom: 3.5rem;
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3.5rem 1.5rem 2rem;
+        width: 100%;
+
+        &-title{
+            color: var(--color-blue400);
+            letter-spacing: 4px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.641rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+        }
+
+        &-heading{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
+            color: var(--color-black);
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__list{
+        
+        &-item{
+            padding: 0 20px;
+
+        }
+    }
+}
+
+.team-item{
+    
+    &__image{
+        &-wrapper{
+            position: relative;
+            width: 100%;
+            height: 270px;
+            margin-bottom: 20px;
+
+            &::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                background-image: url(/img/team/clouds.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: bottom;
+            }
+        }
+
+        &-img{
+            display: block;
+            max-width: 206px;
+            height: 200px;
+            margin: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    &__meta{
+
+        &-wrapper{
+            
+        }
+
+        &-name{
+            display: flex;
+            justify-content: center;
+            color: var(--color-black);
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        &-social{
+            margin-left: 5px;
+            margin-top: 1px;
+        }
+
+        &-position{
+            text-align: center;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: var(--color-blue400);
+        }
+
+        &-description{
+            padding: 0 1.25rem;
+            margin-bottom: .75rem;
+
+            p{
+                display: list-item;
+                list-style-type: '- ';
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
+}

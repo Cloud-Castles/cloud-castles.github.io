@@ -1,4 +1,26 @@
-baseURL = 'http://cloud-castles.com/'
+baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cloud Castles'
-theme = "ananke"
+theme = 'brand-cloud-castles'
+
+[build]
+  writeStats = true
+
+[environment]
+  HUGO_ENVIRONMENT = "production"
+
+[params]
+  description = 'Cloud Castles'
+  copyright = "All rights reserved © Cloudcastles"
+  author = 'Cloud Castles'
+  keywords = 'Cloud Castles'
+  twitter = 'Cloud Castles'
+  github = 'Cloud Castles'
+  linkedin = 'Cloud Castles'
+  facebook = 'Cloud Castles'
+  googleplus = 'Cloud Castles'
+  email = 'contact@cloud-castles.com'
+  rss = 'Cloud Castles'
+  googleAnalytics = 'Cloud Castles'
+  disqusShortname = 'Cloud Castles'
+  enableRobotsTXT = true

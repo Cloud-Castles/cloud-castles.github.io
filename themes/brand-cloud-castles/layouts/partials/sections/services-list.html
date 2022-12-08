@@ -1,0 +1,43 @@
+<section class="services-section" id="{{- .sectionId -}}">
+    <div class="row">
+        <div class="services-section__top">
+            <h3 class="services-section__top-title">
+                {{- .title -}}
+            </h3>
+
+            <h2 class="services-section__top-heading">
+                {{- .heading -}}
+            </h2>
+
+            <div class="services-section__top-description">
+                {{- .description | markdownify -}}
+            </div>
+
+        </div>    
+    </div>
+
+    <div class="row">
+        <ul class="services-list">
+            {{ range .list }}
+            <li class="services-list__el">
+                <h3 class="services-list__el-heading">{{- .title -}}</h3>
+                {{- with .sublist -}}
+                <ul class="services-sublist">
+                    {{- range . -}}
+                    <li class="services-sublist__el">{{- .el -}}</li>
+                    {{- end -}}
+                </ul>
+                {{- end -}}
+                {{- with .button -}}
+                <div class="services-button__wrapper">
+                    <a href="{{- .moveTo -}}" class="services-button__link">
+                        {{- .text -}}
+                    </a>
+                </div>
+                {{- end -}}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
+

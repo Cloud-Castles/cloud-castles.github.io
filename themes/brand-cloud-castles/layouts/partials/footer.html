@@ -1,0 +1,32 @@
+
+<div class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="main-footer__inner">
+                <div class="main-footer__logo">
+                    <a href="/" class="main-footer__logo-link">
+                        <img src="/svg/logo.svg" alt="Logo" class="main-footer__logo-image">
+                    </a>
+                </div>
+                <div class="main-footer__copyright">
+                    {{ with .Site.Params.copyright }}
+                        {{ . }}
+                    {{ end }}
+                    {{ now.Year }}
+                </div>
+                <div class="main-footer__contact">
+                    <a href="mailto:{{ .Site.Params.email }}" class="main-footer__contact-link">
+                        {{ .Site.Params.email }}
+                    </a>
+                    <a href="{{- .Site.Params.linkedin -}}" class="main-footer__contact-linkedin">
+                        <span class="meta-linkedin"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ $script := resources.Get "js/script.js" }}
+{{ $script = $script | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>

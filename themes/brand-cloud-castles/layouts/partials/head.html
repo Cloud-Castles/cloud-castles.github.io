@@ -1,0 +1,13 @@
+{{/* DEFAULT META */}}
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+{{/* CORE CSS */}}
+{{- $css := resources.Get "scss/style.scss" | toCSS | resources.PostCSS -}}
+{{- if hugo.IsProduction -}}
+  {{- $css = $css | minify | fingerprint | resources.PostProcess -}}
+{{- end -}}
+<link
+  rel="stylesheet"
+  href="{{ $css.RelPermalink }}"
+  integrity="{{ $css.Data.Integrity }}"
+>

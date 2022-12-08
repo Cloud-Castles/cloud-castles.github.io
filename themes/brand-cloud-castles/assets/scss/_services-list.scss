@@ -1,0 +1,113 @@
+.services-section{
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3.5rem 1.5rem 2rem;
+        width: 100%;
+
+        &-title{
+            color: var(--color-blue400);
+            letter-spacing: 4px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.641rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+        }
+
+        &-heading{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
+            color: var(--color-black);
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
+
+.services{
+    
+    &-list{
+        display: flex;
+        padding: 0 24px;
+        list-style: none;
+        flex-wrap: wrap;
+        margin-top: 0;
+    
+        &__el{
+            max-width: 360px;
+            padding: 32px;
+            background: #FFFFFF;
+            border: 1px solid #E2E0E0;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+            box-sizing: border-box;
+
+            &-heading{
+                margin: 0;
+                padding: 0;
+                color: var(--color-blue400);
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 2rem;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &-sublist{
+        list-style: none;
+        padding: 0;
+
+        &__el{
+            position: relative;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #566066;
+            margin-bottom: 25px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -12px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px dashed #E2E0E0;
+            }
+        }
+    }
+
+    &-button{
+
+        &__wrapper{
+            border: 1px solid #37A7D8;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 12px 32px;
+            display: block;
+            align-self: end;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__link{
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-decoration: none;
+            color: var(--color-black);
+        }
+    }
+}
