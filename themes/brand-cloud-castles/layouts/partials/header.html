@@ -38,11 +38,16 @@
                         <a href="/" class="menu-col__logo-link">
                             <img src="/svg/logo.svg" class="menu-col__logo-img" alt="Cloud Castles logo">
                         </a>
+                        {{ $currentPage := . }}
+                        {{- with .Site.Menus.main -}}
                         <ul class="menu-col__elements-list">
+                            {{- range . -}}
                             <li class="menu-col__element">
-                                <a href="" class="menu-col__element-anchor">Menu</a>
+                                <a href="{{- .URL -}}" class="menu-col__element-anchor">{{- .Name -}}</a>
                             </li>
+                            {{- end -}}
                         </ul>
+                        {{- end -}}
                         
                     </div>
                 </div>

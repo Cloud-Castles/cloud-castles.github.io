@@ -1,0 +1,19 @@
+<section class="simple-section" id="{{- .sectionId -}}">
+    <div class="row">
+        <div class="simple-section__col">
+            <div class="simple-section__image-wrapper">
+                <img src="{{- .image -}}" alt="" class="simple-section__image-img">
+            </div>
+        </div>
+
+        <div class="simple-section__col">
+            <div class="simple-section__text-wrapper">
+                <div class="container">
+                    <h2 class="simple-section__heading">{{ .heading }}</h2>
+                    <div class="simple-section__text-wrapper">
+                        {{- .text | markdownify -}}
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

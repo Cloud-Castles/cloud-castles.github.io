@@ -24,3 +24,17 @@ theme = 'brand-cloud-castles'
   googleAnalytics = 'Cloud Castles'
   disqusShortname = 'Cloud Castles'
   enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    name = "IaaS"
+    url = "/iaas/"
+    weight = 1
+  [[menu.main]]
+    name = "Sosivio"
+    url = "/sosivio/"
+    weight = 2
+  [[menu.main]]
+    name = "Careers"
+    url = "/careers/"
+    weight = 5

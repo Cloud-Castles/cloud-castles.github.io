@@ -74,6 +74,53 @@
   100% {
     top: 0px; } }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -204,11 +251,13 @@ header.main-header {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  opacity: 0; }
+  opacity: 0;
+  z-index: -1; }
 
 #cloud-menustate {
   display: none; }
   #cloud-menustate:checked + .mobile-backed {
+    z-index: 1;
     opacity: 1;
     transition: opacity 0.4s ease-in-out; }
   #cloud-menustate:checked ~ .main-header .top-row__menu-col {
@@ -472,7 +521,10 @@ header.main-header {
     text-align: center; }
   .top-section__description {
     margin-bottom: 40px;
-    text-align: center; }
+    text-align: center;
+    min-height: 80px;
+    display: block;
+    width: 100%; }
   .top-section__button {
     margin-bottom: 40px; }
     .top-section__button-link {
@@ -897,6 +949,195 @@ header.main-header {
     background: #005C84;
     border-radius: 4px;
     width: 100%; }
+
+.careers-list {
+  background: #F3FBFF;
+  margin-bottom: 3.5rem; }
+
+.job-posting {
+  padding: 3rem 0; }
+  .job-posting__meta {
+    margin-bottom: 0.75rem; }
+    .job-posting__meta-column {
+      display: inline; }
+      .job-posting__meta-column:not(:last-child) {
+        margin-right: 1.5rem; }
+    .job-posting__meta-icon {
+      position: relative;
+      height: 1rem; }
+    .job-posting__meta-text {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875;
+      line-height: 1.18rem;
+      letter-spacing: 1px;
+      color: #000000; }
+    .job-posting__meta .icon-img {
+      position: relative;
+      top: 0.15rem;
+      height: auto;
+      object-fit: cover; }
+  .job-posting__description {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #14142B;
+    margin-bottom: 2rem; }
+    .job-posting__description p:not(:last-child) {
+      margin-bottom: 0.75rem; }
+  .job-posting__title {
+    margin-bottom: 2rem; }
+    .job-posting__title-heading {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #14142B; }
+  .job-posting__list:not(:last-child) {
+    margin-bottom: 2rem; }
+  .job-posting__list-heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    color: #14142B;
+    margin-bottom: 1.625rem; }
+  .job-posting__list-items {
+    position: relative; }
+  .job-posting__list-item {
+    position: relative;
+    padding-left: 2.5rem; }
+    .job-posting__list-item:not(:last-child) {
+      margin-bottom: 1.68rem; }
+      .job-posting__list-item:not(:last-child):after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dashed #88B7CE; }
+    .job-posting__list-item--cloud::before {
+      content: '';
+      position: absolute;
+      top: 0rem;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url(../svg/cloud.svg) no-repeat;
+      background-size: contain; }
+    .job-posting__list-item--mark::before {
+      content: '';
+      position: absolute;
+      top: 0rem;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url(../svg/circle-check.svg) no-repeat;
+      background-size: contain; }
+  .job-posting__button {
+    background: #37A7D8;
+    border-radius: 4px;
+    width: 100%;
+    display: block; }
+    .job-posting__button-icon {
+      position: relative;
+      top: 0.3rem;
+      height: auto;
+      object-fit: cover;
+      margin-right: 0.25rem; }
+    .job-posting__button-anchor {
+      padding: 0.85rem 1.25rem;
+      font-family: 'Nunito';
+      color: #fff;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      background: transparent;
+      border: transparent;
+      display: block;
+      text-align: center;
+      text-decoration: none; }
+
+.simple-section__col:not(:last-child) {
+  margin-bottom: 3.5rem; }
+
+.simple-section__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.simple-section__image-img {
+  max-width: 100%;
+  height: 100%; }
+
+.simple-section__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0D3F56;
+  margin-bottom: 1rem; }
+
+.simple-section__text-wrapper {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #14142B;
+  margin-bottom: 2rem; }
+  .simple-section__text-wrapper p:not(:last-child) {
+    margin-bottom: 1rem; }
+
+.simple-service {
+  padding: 3.5rem 0; }
+  .simple-service__heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #14142B; }
+    .simple-service__heading-wrapper {
+      margin-bottom: 2rem; }
+  .simple-service__list {
+    margin-bottom: 2rem; }
+    .simple-service__list-items {
+      position: relative; }
+    .simple-service__list-item {
+      position: relative;
+      padding-left: 2.5rem;
+      font-size: 0.875rem; }
+      .simple-service__list-item:not(:last-child) {
+        margin-bottom: 1.68rem; }
+        .simple-service__list-item:not(:last-child):after {
+          content: '';
+          position: absolute;
+          bottom: -12px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          border-bottom: 1px dashed #88B7CE; }
+      .simple-service__list-item--cloud::before {
+        content: '';
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../svg/cloud.svg) no-repeat;
+        background-size: contain; }
+      .simple-service__list-item--mark::before {
+        content: '';
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../svg/circle-check.svg) no-repeat;
+        background-size: contain; }
 
 .main-footer__inner {
   margin-top: 2.875rem; }

@@ -99,6 +99,8 @@
     }
 }
 
+@import "reset.scss";
+
 html{
     scroll-behavior: smooth;
 }
@@ -256,6 +258,7 @@ header.main-header{
     width: 100vw;
     position: absolute;
     opacity: 0;
+    z-index: -1;
 }
 
 #cloud-menustate {
@@ -263,6 +266,7 @@ header.main-header{
     
     &:checked {
         + .mobile-backed {
+            z-index: 1;
             opacity: 1;
             transition: opacity 0.4s ease-in-out;
         }
@@ -547,66 +551,16 @@ header.main-header{
 
 
 
-
-
-
-.top-section{
-    background: #fff;
-    background-image: url(/img/section-bg.png);
-    background-size: cover;
-    background-position: center;
-
-
-    &__inner{
-        padding-top: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    &__icon{
-        flex-basis: 100%;
-        margin-bottom: 10px;
-
-        &-image{
-            margin: 0 auto;
-            display: block;
-        }
-    }
-
-    &__headline{
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
-    &__description{
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    &__button{
-        margin-bottom: 40px;
-
-        &-link{
-            position: relative;
-            animation-name: scroll-down-anim;
-            animation-duration: 1.5s;
-            animation-timing-function: ease-in;
-            animation-iteration-count: infinite;
-            animation-delay: .3s;
-        }
-    }
-}
-
-
-
+@import "_top-section.scss";
 @import "_about-us.scss";
 @import "_services-list.scss";
 @import "_technology-section.scss";
 @import "_sosivio-section.scss";
 @import "_team-section.scss";
 @import "_contact-section.scss";
-
+@import "__careers-list.scss";
+@import "_simple-section.scss";
+@import "_simple-service.scss";
 
 @import "_footer.scss";
 

@@ -18,11 +18,13 @@
                     </p>
                 </div>
 
+                {{- with .moveTo -}}
                 <div class="top-section__button">
-                    <a href="{{ .moveTo }}" class="top-section__button-link">
+                    <a href="{{- . -}}" class="top-section__button-link">
                         <img src="/svg/down-arrow.svg" alt="Next">
                     </a>
                 </div>
+                {{- end -}}
             </div>
 
         </div>

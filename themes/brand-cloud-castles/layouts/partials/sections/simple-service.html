@@ -1,0 +1,31 @@
+<section class="simple-service" id="{{- .sectionId -}}">
+    <div class="container">
+        <div class="row">
+            <div class="simple-service__heading-wrapper">
+                <h2 class="simple-service__heading">{{ .heading }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {{- with .list -}}
+                <div class="simple-service__list">
+                    {{- $icon := .icon -}}
+                    {{- with .items -}}
+                    <ul class="simple-service__list-items">
+                        {{- range . -}}
+                        <li class="simple-service__list-item simple-service__list-item--{{- $icon -}}">
+                            {{- .el -}}
+                        </li>
+                        {{- end -}}
+                    </ul>
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
+        <div class="row">
+            <div class="simple-service__text-wrapper">
+                {{- .text | markdownify -}}
+            </div>
+        </div>
+    </div>
+
+</section>
