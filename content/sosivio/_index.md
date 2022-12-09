@@ -5,7 +5,7 @@ sections:
     - type: sections/top-section
       image: /svg/full-sosivio.svg
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel molestie in nunc, duis varius vitae nec. Elementum nibh varius maecenas ipsum id urna quis. Id neque a vel egestas.'
-      moveTo: '#about-us'
+      moveTo: '#sosivio'
 
     - type: sections/simple-section
       sectionId: sosivio

@@ -575,3 +575,10 @@ header.main-header{
 a, input[type="submit"], button {
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin: 0 auto;
+    }
+}

@@ -68,3 +68,60 @@
         }
     }
 }
+
+
+@media screen and (min-width: 768px){
+    .sosivio-section{
+        margin-bottom: 0;
+
+        &__background{
+            &-col{
+                height: initial;
+            }
+
+            &-fill{
+                height: 100%;
+            }
+
+            &-icon{
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+        &__background-col,
+        &__text-col{
+            flex-basis: 50%;
+        }
+
+        &__text-col{
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            text-align: left;
+        }
+
+        &__text-heading,
+        &__text-content{
+            padding-left: 5.4rem;
+        }
+
+        &__text-heading{
+            font-size: 3rem;
+            line-height: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__button{
+            margin: initial;    
+            margin-left: 5.4rem;
+        }
+
+        &__text-heading{
+            text-align: left;
+        }
+
+        &__text-content{
+            max-width: 497px;
+        }
+    }
+}

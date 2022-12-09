@@ -111,3 +111,51 @@
         }
     }
 }
+
+@media screen and (min-width: 768px){
+    .services{
+        &-section{
+            &__top{
+                padding-bottom: 3.5rem;
+
+                &-title{
+                    font-size: 0.75rem;
+                    letter-spacing: 4px;
+                    line-height: 1.125rem;
+                }
+
+                &-heading{
+                    font-size: 3rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+        &-list{
+            padding: 0;
+            justify-content: space-between;
+            margin-bottom: 2.5rem;
+        
+            &__el{
+                max-width: 360px;
+                margin-bottom: 2.5rem;
+
+                &--empty{
+                    min-width: 360px;
+                }
+                // &:nth-child(2, 4, 8){
+                //     margin-left: 1.5rem;
+                // }
+                
+                &-heading{
+                    max-width: 260px;
+                }
+
+                &:nth-child(1){
+                    .services-list__el-heading{
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}

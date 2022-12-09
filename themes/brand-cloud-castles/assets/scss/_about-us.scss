@@ -55,3 +55,74 @@
         }
     }
 }
+
+@media screen and (min-width: 768px){
+    .about-us{
+        &__info{
+            padding-top: 6rem;
+            padding-left: 0;
+            padding-right: 0;
+
+            &-wrapper{
+                display: flex;
+                flex-basis: 52%;
+                flex-direction: column;
+                align-items: flex-end;
+                background-color: #37A7D8;
+            }
+
+            &-title{
+                font-size: 0.75rem;
+                letter-spacing: 4px;
+                line-height: 1.125rem;
+                padding-left: 6.5rem;
+                padding-right: 8.62rem;
+            }
+
+            &-headline{
+                max-width: 490px;
+                padding-left: 6.5rem;
+                padding-right: 8.62rem;
+            }
+
+            &-description{
+                max-width: 490px;
+                padding-left: 6.5rem;
+                padding-right: 7.62rem;
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+
+                p{
+                    &:not(:last-child){
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        &__headline{
+            max-width: 490px;
+            padding-left: 6.5rem;
+            padding-right: 8.62rem;
+
+            &-heading{
+                font-size: 3rem;
+                line-height: 4rem;
+                width: 390px;
+            }
+        }
+
+        &__image{
+            width: 100%;
+
+            &-img{
+                height: 100%;
+                width: 100%;
+            }
+
+            &-wrapper{
+                flex-basis: 48%;
+            }
+        }
+    }
+}

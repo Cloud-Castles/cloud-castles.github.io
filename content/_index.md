@@ -76,7 +76,7 @@ sections:
       technology:
           - title: 'Kubernetes'
             icon: /svg/black-kubernetes.svg
-            description: Cloud Services are undergoing rapid change & exponential growth. Kubernetes has become the de facto standard for Cloud Orchestration introducing new problems for DevOps, Security, IT & Devs. '
+            description: Cloud Services are undergoing rapid change & exponential growth. Kubernetes has become the de facto standard for Cloud Orchestration introducing new problems for DevOps, Security, IT & Devs.
             blocks:
                 - title: Predictive Troubleshooting
                   list:
@@ -85,6 +85,7 @@ sections:
                 - title: 'Data Swirling: Ai-on-the-fly'
                   list:
                       - el: 'Lean & Distributed ML Engines – <br> Data processing occurs on the edge and in real-time'
+                      - el: 'ML Engines fueled by proprietary system and application tests​'
                       - el: 'Distributed data collectors for low resource utilization and no permanent storage'
                       - el: 'No GPU or TPU Required!​'
                 - title: 'Non-intrusive: Works On-Prem'
@@ -97,7 +98,10 @@ sections:
 
           - title: 'Terraform'
             icon: /svg/black-terrafom.svg
-            description: 'Are you planning migration to cloud native infrastructure?Seeking a way to operationalize disparate infrastructure and deploy applications quickly for on-premise and cloud? Terraform is the answer. '
+            description: |
+                Are you planning migration to cloud native infrastructure?
+
+                Seeking a way to operationalize disparate infrastructure and deploy applications quickly for on-premise and cloud? Terraform is the answer.
             blocks:
                 - title: 'The main benefits of Terraform include:'
                   type: list

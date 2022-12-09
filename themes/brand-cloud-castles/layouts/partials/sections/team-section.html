@@ -11,28 +11,30 @@
         </div>    
     </div>
     <div class="row">
-        <div class="team-section__list">
-            {{- range .team -}}
-                <div class="team-section__list-item">
-                    <div class="team-item__image-wrapper">
-                        <img src="{{- .image -}}" alt="{{- .name -}}" class="team-item__image-img">
-                    </div>
-                    <div class="team-item__meta-wrapper">
-                        <h4 class="team-item__meta-name">
-                            {{- .name -}}
-                            <a href="{{.linkedin}}" target="_blank" title="{{- .name -}}" class="team-item__meta-social">
-                                <span class="meta-linkedin"></span>
-                            </a>
-                        </h4>
-                        <p class="team-item__meta-position">
-                            {{- .position -}}
-                        </p>
-                        <div class="team-item__meta-description">
-                            {{- .description | markdownify -}}
+        <div class="container">
+            <div class="team-section__list">
+                {{- range .team -}}
+                    <div class="team-section__list-item">
+                        <div class="team-item__image-wrapper">
+                            <img src="{{- .image -}}" alt="{{- .name -}}" class="team-item__image-img">
+                        </div>
+                        <div class="team-item__meta-wrapper">
+                            <h4 class="team-item__meta-name">
+                                {{- .name -}}
+                                <a href="{{.linkedin}}" target="_blank" title="{{- .name -}}" class="team-item__meta-social">
+                                    <span class="meta-linkedin"></span>
+                                </a>
+                            </h4>
+                            <p class="team-item__meta-position">
+                                {{- .position -}}
+                            </p>
+                            <div class="team-item__meta-description">
+                                {{- .description | markdownify -}}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {{- end -}}
+                {{- end -}}
+            </div>
         </div>
     </div>
 

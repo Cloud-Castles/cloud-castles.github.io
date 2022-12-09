@@ -96,7 +96,7 @@
 
         &-position{
             text-align: center;
-            font-weight: 400;
+            font-weight: 300;
             font-size: 1rem;
             line-height: 1.5rem;
             color: var(--color-blue400);
@@ -111,7 +111,56 @@
                 list-style-type: '- ';
                 font-size: 0.875rem;
                 line-height: 1.25rem;
+                margin-bottom: 1rem;
             }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .team-section{
+
+        &__top{
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+
+            &-title{
+                font-size: 0.75rem;
+            }
+
+            &-heading{
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+        }
+
+        &__list{
+            display: flex;
+            width: 100%;
+
+            &-item{
+                flex-basis: 30%;
+            }
+        }
+    }
+
+    .team-item{
+        
+        &__meta-name{
+            justify-content: left;
+            flex-direction: row-reverse;
+            line-height: 2.25rem
+        }
+
+        &__meta-social{
+            margin-left: 0;
+            margin-right: 5px;
+        }
+
+        &__meta-position{
+            text-align: left;
+            margin-bottom: 1rem;
         }
     }
 }

@@ -10,45 +10,46 @@
             </h2>
         </div>  
 
-        <div class="technology-section__tools">
-            {{- with .technology -}}
-                {{- range . -}}
-                <div class="technology-section__tool">
-                    <h3 class="technology-section__tool-heading">
-                        <img src="{{- .icon -}}" alt="{{- .title -}}" class="technology-section__tool-icon" />
-                        {{- .title -}}    
-                    </h3>
-                    <div class="technology-section__tool-description">
-                        {{- .description -}}
-                    </div>
-
-                    {{- with .blocks -}}
-                        {{- range . -}}
-                        <div class="technology-section__tool-block">
-                            <h3 class="tool-block__heading">{{- .title -}}</h3>
-                            <ul class='tool-block__description {{if eq .type "inline"}} tool-block__description--inline{{else if eq .type "list"}}tool-block__description--list{{end}}'>
-                                {{- with .list -}}
-                                    {{- range . -}}
-                                        <li class="tool-block__description-element">
-                                            {{- .el | safeHTML -}}
-                                        </li>
-                                    {{- end -}}
-                                {{- end -}}
-                            </ul>
-                            <div class="tool-block__after-list">
-                                {{- with .afterList -}}
-                                    {{- . -}}
-                                {{- end -}}
-                            </div>
+        <div class="container">
+            <div class="technology-section__tools">
+                {{- with .technology -}}
+                    {{- range . -}}
+                    <div class="technology-section__tool">
+                        <h3 class="technology-section__tool-heading">
+                            <img src="{{- .icon -}}" alt="{{- .title -}}" class="technology-section__tool-icon" />
+                            {{- .title -}}    
+                        </h3>
+                        <div class="technology-section__tool-description">
+                            {{- .description | markdownify -}}
                         </div>
+
+                        {{- with .blocks -}}
+                            {{- range . -}}
+                            <div class="technology-section__tool-block">
+                                <h3 class="tool-block__heading">{{- .title -}}</h3>
+                                <ul class='tool-block__description {{if eq .type "inline"}} tool-block__description--inline{{else if eq .type "list"}}tool-block__description--list{{end}}'>
+                                    {{- with .list -}}
+                                        {{- range . -}}
+                                            <li class="tool-block__description-element">
+                                                {{- .el | safeHTML -}}
+                                            </li>
+                                        {{- end -}}
+                                    {{- end -}}
+                                </ul>
+                                <div class="tool-block__after-list">
+                                    {{- with .afterList -}}
+                                        {{- . -}}
+                                    {{- end -}}
+                                </div>
+                            </div>
+                            {{- end -}}
                         {{- end -}}
+                        
+                        
+                    </div>
                     {{- end -}}
-                    
-                    
-                </div>
                 {{- end -}}
-            {{- end -}}
 
+            </div>
         </div>
-
 </section>

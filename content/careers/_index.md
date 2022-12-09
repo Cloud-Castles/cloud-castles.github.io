@@ -4,7 +4,7 @@ title: 'Careers'
 sections:
     - type: sections/top-section
       heading: 'Become a Cloud Knight!'
-      moveTo: '#about-us'
+      moveTo: '#careers-list'
 
     - type: sections/careers-list
       sectionId: careers-list
@@ -36,6 +36,7 @@ sections:
                       - el: 'Good communication skills.'
                       - el: 'Fast learner with different technologies.'
                       - el: 'Understand how to use Git and programming languages such as Python.'
+
       button:
           buttonText: 'Upload CV'
           link: '/'
