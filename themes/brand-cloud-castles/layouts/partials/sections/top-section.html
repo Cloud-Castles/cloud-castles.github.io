@@ -1,0 +1,32 @@
+<section class="top-section">
+    <div class="container">
+        <div class="row">
+            <div class="top-section__inner">
+                <div class="top-section__icon">
+                    <img src="{{ .image }}" class="top-section__icon-image" alt="">
+                </div>
+                
+                <div class="top-section__headline">
+                    <h2 class="top-section__headline-heading">
+                        {{ .heading }}
+                    </h2>
+                </div>
+
+                <div class="top-section__description">
+                    <p class="top-section__description-paragraph">
+                        {{ .description | markdownify }}
+                    </p>
+                </div>
+
+                {{- with .moveTo -}}
+                <div class="top-section__button">
+                    <a href="{{- . -}}" class="top-section__button-link">
+                        <img src="/svg/down-arrow.svg" alt="Next">
+                    </a>
+                </div>
+                {{- end -}}
+            </div>
+
+        </div>
+    </div>
+</section>

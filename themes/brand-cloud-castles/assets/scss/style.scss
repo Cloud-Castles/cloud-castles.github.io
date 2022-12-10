@@ -1,0 +1,159 @@
+:root{
+    --color-blue600: #005C84;
+    --color-blue500: #1D84B0;
+    --color-blue400: #29AAE2;
+    --color-blue300: #67C2EC;
+    --color-blue200: #9BE1FF;
+    --color-blue100: #C0F0FF;
+    --color-black: #14142B;
+    --color-gray400: #A1B2BD;
+    --color-gray300: #CDD6E0;
+    --color-gray200: #E6EEF3;
+    --color-gray100: #F7FBFD;
+    --color-white: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-italic-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: semi-bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-semibolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/poppins-semibolditalic-webfont.woff') format('woff');
+    font-weight: semi-bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/fonts/nunito-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/nunito-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes scroll-down-anim {
+    0% {
+      top: 0px;
+    }
+  
+    60% {
+      top: 20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@import "reset.scss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--color-black);
+}
+
+
+
+body{
+    font-family: 'Poppins';
+    font-weight: 300;
+    margin: 0;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.container{
+    max-width: 1160px;
+    padding: 0px 24px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@import "_top-section.scss";
+
+@import "_footer.scss";
+
+.meta-linkedin{
+    height: 19.2px;
+    width: 19.2px;
+    background: url(/svg/social-linkedin.svg) no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+a, input[type="submit"], button {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin: 0 auto;
+    }
+}

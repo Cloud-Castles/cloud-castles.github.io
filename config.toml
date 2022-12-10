@@ -1,4 +1,12 @@
 baseURL = 'http://cloud-castles.com/'
 languageCode = 'en-us'
 title = 'Cloud Castles'
-theme = "ananke"
+theme = "brand-cloud-castles"
+
+
+[params]
+  description = 'Cloud Castles'
+  copyright = "All rights reserved © Cloudcastles"
+  linkedin = 'Cloud Castles'
+  email = 'contact@cloud-castles.com'
+  enableRobotsTXT = true

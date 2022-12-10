@@ -1,0 +1,122 @@
+.main-footer{
+
+    &__inner{
+        margin-top: 2.875rem;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        &-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    &__contact{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &-link{
+            position: relative;
+            text-decoration: none;
+            color: #566066;
+            font-size: 1rem;
+            font-family: 'Nunito';
+            font-weight: 400;
+
+            &:after{
+                content: '';
+                position: absolute;
+                border-bottom: 2px solid transparent;
+                width: 0%;
+                transition: border-bottom-width 0.3s ease-in-out;
+                height: 2px;
+                width: 0%;
+
+                left: 0;
+                bottom: 0px;
+            }
+            
+            &:hover{
+                &:after{
+                    content: '';
+                    border-width: 100%;
+                    border-bottom-color: #566066;
+                    transition: width 0.3s ease-in-out;
+                    height: 2px;
+                    width: 100%;
+                }
+                
+            }
+            &:hover{
+                border-width: 100%;
+                border-bottom-color: #566066;
+                transition: width 0.3s ease-in-out;
+            }
+
+        }
+
+        &-linkedin{
+            display: flex;
+            align-items: center;
+
+            .meta-linkedin{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-footer{
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        .container{
+            width: 100%;
+        }
+        &__inner{
+            display: flex;
+            margin-top: 0;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            align-content: center;
+            display: flex;
+        }
+        
+        &__contact{
+            margin-bottom: 1.2rem;
+
+            &-link{
+                margin-right: 20px;
+            }
+        }
+
+        &__logo,
+        &__copyright,
+        &__contact{
+            margin-bottom: 0;
+        }
+        
+    }
+}
