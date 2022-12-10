@@ -226,6 +226,22 @@ header.main-header {
     line-height: inherit;
     text-align: inherit; }
 
+.main-header__logo-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; }
+
+.main-header__logo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out; }
+  .main-header__logo-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out; }
+
 .main-header__menu-wrapper {
   display: flex;
   position: relative;

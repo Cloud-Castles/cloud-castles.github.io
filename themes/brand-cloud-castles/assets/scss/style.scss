@@ -231,6 +231,30 @@ header.main-header{
         text-align: inherit;
     }
 }
+
+.main-header__logo{
+
+    &-link{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    &-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
 .main-header__menu-wrapper{
     display: flex;
     position: relative;
