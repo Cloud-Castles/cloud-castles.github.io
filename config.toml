@@ -1,6 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cloud Castles'
+<<<<<<< HEAD
 theme = 'brand-cloud-castles'
 
 [build]
@@ -8,10 +9,15 @@ theme = 'brand-cloud-castles'
 
 [environment]
   HUGO_ENVIRONMENT = "production"
+=======
+theme = "brand-cloud-castles"
+
+>>>>>>> main
 
 [params]
   description = 'Cloud Castles'
   copyright = "All rights reserved © Cloudcastles"
+<<<<<<< HEAD
   author = 'Cloud Castles'
   keywords = 'Cloud Castles'
   twitter = 'Cloud Castles'
@@ -38,3 +44,8 @@ theme = 'brand-cloud-castles'
     name = "Careers"
     url = "/careers/"
     weight = 5
+=======
+  linkedin = 'Cloud Castles'
+  email = 'contact@cloud-castles.com'
+  enableRobotsTXT = true
+>>>>>>> main
