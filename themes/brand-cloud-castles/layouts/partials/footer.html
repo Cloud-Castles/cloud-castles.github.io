@@ -27,9 +27,6 @@
     </div>
 </div>
 
-<<<<<<< HEAD
 {{ $script := resources.Get "js/script.js" }}
 {{ $script = $script | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-=======
->>>>>>> main

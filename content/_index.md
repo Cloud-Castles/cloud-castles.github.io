@@ -4,7 +4,6 @@ title: 'Home'
 sections:
     - type: sections/top-section
       image: /svg/castle.svg
-<<<<<<< HEAD
       heading: 'The future is in our hands to shape '
       description: 'Cloud-Castles Ltd. provides expert devops services through dozens of combined years of experience building and deploying software products and IT infrastructure.'
       moveTo: '#about-us'
@@ -172,7 +171,4 @@ sections:
       heading: 'Please submit the form to get more information about how we can be helpful'
       description: |
           Send us a message and we'll respond as soon as possible.
-=======
-      heading: 'Under construction'
->>>>>>> main
 ---
