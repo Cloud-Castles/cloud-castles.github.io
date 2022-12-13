@@ -135,7 +135,18 @@ body{
     justify-content: space-between;
 }
 
+
+@import "_header.scss";
 @import "_top-section.scss";
+@import "_about-us.scss";
+@import "_services-list.scss";
+@import "_technology-section.scss";
+@import "_sosivio-section.scss";
+@import "_team-section.scss";
+@import "_contact-section.scss";
+@import "__careers-list.scss";
+@import "_simple-section.scss";
+@import "_simple-service.scss";
 
 @import "_footer.scss";
 

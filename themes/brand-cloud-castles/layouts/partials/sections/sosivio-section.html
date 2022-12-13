@@ -1,0 +1,29 @@
+<section class="sosivio-section">
+    <div class="row">
+        {{ $image := resources.Get "img/sosivio.jpg" }}
+        <div class="sosivio-section__background-col">
+            <div class="sosivio-section__background-fill"  style="background-image: url({{ $image.Permalink }})">
+                <img src="{{ .icon }}" alt="{{.heading}}" class="sosivio-section__background-icon">
+            </div>
+        </div>
+        <div class="sosivio-section__text-col">
+            <div class="container">
+                <h3 class="sosivio-section__text-heading">
+                    {{.heading}}
+                </h3>
+                <div class="sosivio-section__text-content">
+                    {{.text}}
+                </div>
+
+                {{ with .button }}
+                <a href="{{ .link }}" class="sosivio-section__button-link">
+                    <div class="sosivio-section__button">
+                        {{ .text }}
+                    </div>
+                </a>
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+</section>

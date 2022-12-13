@@ -1,12 +1,40 @@
-baseURL = 'http://cloud-castles.com/'
+baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cloud Castles'
-theme = "brand-cloud-castles"
+theme = 'brand-cloud-castles'
 
+[build]
+  writeStats = true
+
+[environment]
+  HUGO_ENVIRONMENT = "production"
 
 [params]
   description = 'Cloud Castles'
   copyright = "All rights reserved © Cloudcastles"
+  author = 'Cloud Castles'
+  keywords = 'Cloud Castles'
+  twitter = 'Cloud Castles'
+  github = 'Cloud Castles'
   linkedin = 'Cloud Castles'
+  facebook = 'Cloud Castles'
+  googleplus = 'Cloud Castles'
   email = 'contact@cloud-castles.com'
+  rss = 'Cloud Castles'
+  googleAnalytics = 'Cloud Castles'
+  disqusShortname = 'Cloud Castles'
   enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    name = "IaaS"
+    url = "/iaas/"
+    weight = 1
+  [[menu.main]]
+    name = "Sosivio"
+    url = "/sosivio/"
+    weight = 2
+  [[menu.main]]
+    name = "Careers"
+    url = "/careers/"
+    weight = 5

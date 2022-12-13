@@ -1,0 +1,66 @@
+<section class="careers-list" id="{{- .sectionId -}}">
+    <div class="container">
+            {{- range .careersList -}}
+            <div class="job-posting">
+                <div class="job-posting__meta">
+                    {{- if .hours -}}
+                    <div class="job-posting__meta-column">
+                        <span class="job-posting__meta-icon">
+                            <img src="/svg/job-hours.svg" alt="" class="icon-img">
+                        </span>
+                        <span class="job-posting__meta-text">
+                            {{- .hours -}}
+                        </span>
+                    </div>
+                    {{- end -}}
+                    {{- if .location -}}
+                    <div class="job-posting__meta-column">
+                        <span class="job-posting__meta-icon">
+                            <img src="/svg/job-location.svg" alt="" class="icon-img">
+                        </span>
+                        <span class="job-posting__meta-text">
+                            {{- .location -}}
+                        </span>
+                    </div>
+                    {{- end -}}
+                </div>
+                <div class="job-posting__title">
+                    <h2 class="job-posting__title-heading">
+                        {{- .title -}}
+                    </h2>
+                </div>
+                <div class="job-posting__description">
+                    {{- .description | markdownify -}}
+                </div>
+
+                {{- range .lists -}}
+                <div class="job-posting__list">
+                    <h3 class="job-posting__list-heading">
+                        {{- .listHeading -}}
+                    </h3>
+                    {{- $icon := .icon -}}
+                    {{- with .items -}}
+                    <ul class="job-posting__list-items">
+                        {{- range . -}}
+                        <li class="job-posting__list-item job-posting__list-item--{{- $icon -}}">
+                            {{- .el -}}
+                        </li>
+                        {{- end -}}
+                    </ul>
+                    {{- end -}}
+                </div>
+                {{- end -}}
+            {{- end -}}
+            </div>
+            {{- with .button -}}
+            <div class="job-posting__button">
+                <a href="{{- .link -}}" class="job-posting__button-anchor">
+                    <img src="/svg/upload-cv.svg" alt="Upload CV" class="job-posting__button-icon" />
+                    {{- .buttonText -}}
+                </a>
+            </div>
+            {{- end -}}
+        </div>
+        
+    </div>
+</section>

@@ -1,0 +1,198 @@
+.contact-section{
+    background-color: #37A7D8;
+    padding: 56px 24px;
+
+    &__decoration{
+        display: none;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        gap: 10px;
+
+        &-title{
+            color: var(--color-blue100);
+            letter-spacing: 4px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.641rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &-headline{
+
+        }
+
+        &-description{
+            font-size: 0.875rem;
+            color: #fff;
+        }
+    }
+
+    &__title-heading{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    &__headline-heading{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    &__form{
+        
+        &-wrapper{
+
+        }
+
+    }
+}
+
+.contact-section{
+    
+    &__input{
+        font-family: 'Nunito';
+        padding: 1rem 1.25rem;
+        color: #212121;
+        line-height: 1.25rem;
+        font-weight: 400;
+        outline: none;
+        box-sizing: border-box;
+        
+        background: transparent;
+        background: #F7F7FD;
+        border: transparent;
+        border-radius: 4px;
+        z-index: 10;
+
+        &--textarea{
+            resize: vertical;
+            
+            background-image: url(../svg/resize.svg);
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            margin-bottom: .5rem;
+        }
+
+        &::placeholder{
+            color: #212121;
+        }
+
+
+
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            // background: #F7F7FD;
+            border: transparent;
+
+            &--textarea{
+                
+            }
+        }
+    }
+
+    &__textarea-counter{
+        text-align: right;
+        color: #fff;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1rem;
+
+    }
+
+    &__button{
+        padding: 0.85rem 1.25rem;
+        font-family: 'Nunito';
+        color: #fff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        background: transparent;
+        border: transparent;
+        width: 100%;
+
+
+        &-wrapper{
+            background: #005C84;
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contact-section{
+        padding: 56px 0;
+        background: url(/img/contact-bg@2x.png);
+        position: relative;
+        background-size: cover;
+        background-position: bottom;
+
+        &__decoration{
+            display: block;
+            position: relative;
+
+            &-cloud--1{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                width: 4rem;
+                height: 15rem;
+            }
+        }
+
+        &__info{
+            flex-basis: 48%;
+            flex-direction: row;
+            flex-direction: column;
+        }
+
+        &__title-heading{
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            line-height: 1.125rem;
+        }
+
+        &__headline-heading{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.25rem;
+            line-height: 3rem;
+        }
+
+        &__form{
+            width: 460px;
+
+            &-wrapper{
+                flex-basis: 48%;
+                flex-direction: row;
+                flex-direction: column;
+            }
+        }
+
+        &__submit-wrapper{
+            width: 117px;
+        }
+    }
+}
+
+@media screen and (min-width: 560px) and (max-width: 810px){
+    .contact-section__info{
+        flex-basis: 60%;
+    }
+
+}
+
