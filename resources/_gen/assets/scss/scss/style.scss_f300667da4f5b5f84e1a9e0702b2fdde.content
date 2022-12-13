@@ -1,0 +1,307 @@
+:root {
+  --color-blue600: #005C84;
+  --color-blue500: #1D84B0;
+  --color-blue400: #29AAE2;
+  --color-blue300: #67C2EC;
+  --color-blue200: #9BE1FF;
+  --color-blue100: #C0F0FF;
+  --color-black: #14142B;
+  --color-gray400: #A1B2BD;
+  --color-gray300: #CDD6E0;
+  --color-gray200: #E6EEF3;
+  --color-gray100: #F7FBFD;
+  --color-white: #FFFFFF; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-bold-webfont.woff2") format("woff2"), url("/fonts/poppins-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-bolditalic-webfont.woff2") format("woff2"), url("/fonts/poppins-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-regular-webfont.woff2") format("woff2"), url("/fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-italic-webfont.woff2") format("woff2"), url("/fonts/poppins-italic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-light-webfont.woff2") format("woff2"), url("/fonts/poppins-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-lightitalic-webfont.woff2") format("woff2"), url("/fonts/poppins-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-semibold-webfont.woff2") format("woff2"), url("/fonts/poppins-semibold-webfont.woff") format("woff");
+  font-weight: semi-bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins-semibolditalic-webfont.woff2") format("woff2"), url("/fonts/poppins-semibolditalic-webfont.woff") format("woff");
+  font-weight: semi-bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("/fonts/nunito-variablefont_wght-webfont.woff2") format("woff2"), url("/fonts/nunito-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@keyframes scroll-down-anim {
+  0% {
+    top: 0px; }
+  60% {
+    top: 20px; }
+  100% {
+    top: 0px; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+h2 {
+  font-family: 'Poppins';
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--color-black); }
+
+body {
+  font-family: 'Poppins';
+  font-weight: 300;
+  margin: 0;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+
+.container {
+  max-width: 1160px;
+  padding: 0px 24px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.top-section {
+  background: #fff;
+  background-image: url(/img/section-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 85vh; }
+  .top-section__inner {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .top-section__icon {
+    flex-basis: 100%;
+    margin-bottom: 10px; }
+    .top-section__icon-image {
+      margin: 0 auto;
+      display: block; }
+  .top-section__headline {
+    margin-bottom: 25px;
+    text-align: center; }
+  .top-section__description {
+    margin-bottom: 40px;
+    text-align: center;
+    min-height: 80px;
+    display: block;
+    width: 100%; }
+  .top-section__button {
+    margin-bottom: 40px; }
+    .top-section__button-link {
+      position: relative;
+      animation-name: scroll-down-anim;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+      animation-delay: .3s; }
+
+@media screen and (min-width: 768px) {
+  .top-section {
+    min-height: 640px; }
+    .top-section__inner {
+      margin: auto;
+      padding-top: 150px;
+      max-width: 690px; }
+    .top-section__icon {
+      flex-basis: 50%;
+      margin-bottom: 1.5rem; }
+    .top-section__headline {
+      margin-bottom: 1.5rem; }
+      .top-section__headline-heading {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        letter-spacing: 1px; }
+    .top-section__description {
+      margin-bottom: 60px;
+      max-width: 690px; }
+      .top-section__description-paragraph {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #566066; }
+    .top-section__button {
+      margin-bottom: 60px; } }
+
+.main-footer__inner {
+  margin-top: 2.875rem; }
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+  .main-footer__logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; }
+    .main-footer__logo-link:hover {
+      transform: scale(1.1); }
+
+.main-footer__copyright {
+  text-align: center;
+  margin-bottom: 1.2rem; }
+
+.main-footer__contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .main-footer__contact-link {
+    position: relative;
+    text-decoration: none;
+    color: #566066;
+    font-size: 1rem;
+    font-family: 'Nunito';
+    font-weight: 400; }
+    .main-footer__contact-link:after {
+      content: '';
+      position: absolute;
+      border-bottom: 2px solid transparent;
+      width: 0%;
+      transition: border-bottom-width 0.3s ease-in-out;
+      height: 2px;
+      width: 0%;
+      left: 0;
+      bottom: 0px; }
+    .main-footer__contact-link:hover:after {
+      content: '';
+      border-width: 100%;
+      border-bottom-color: #566066;
+      transition: width 0.3s ease-in-out;
+      height: 2px;
+      width: 100%; }
+    .main-footer__contact-link:hover {
+      border-width: 100%;
+      border-bottom-color: #566066;
+      transition: width 0.3s ease-in-out; }
+  .main-footer__contact-linkedin {
+    display: flex;
+    align-items: center; }
+    .main-footer__contact-linkedin .meta-linkedin {
+      width: 2rem;
+      height: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .main-footer {
+    height: 80px;
+    display: flex;
+    align-items: center; }
+    .main-footer .container {
+      width: 100%; }
+    .main-footer__inner {
+      display: flex;
+      margin-top: 0;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      align-content: center;
+      display: flex; }
+    .main-footer__contact {
+      margin-bottom: 1.2rem; }
+      .main-footer__contact-link {
+        margin-right: 20px; }
+    .main-footer__logo, .main-footer__copyright, .main-footer__contact {
+      margin-bottom: 0; } }
+
+.meta-linkedin {
+  height: 19.2px;
+  width: 19.2px;
+  background: url(/svg/social-linkedin.svg) no-repeat;
+  display: inline-block;
+  background-size: contain; }
+
+a, input[type="submit"], button {
+  cursor: pointer; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto; } }

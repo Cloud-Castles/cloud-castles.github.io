@@ -1,4 +1,6 @@
 .services-section{
+    background: url(/img/services-bg.png);
+    background-size: cover;
 
     &__top{
         display: flex;
@@ -156,6 +158,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1160px){
+    .services{
+        &-list{
+            justify-content: space-evenly;
         }
     }
 }

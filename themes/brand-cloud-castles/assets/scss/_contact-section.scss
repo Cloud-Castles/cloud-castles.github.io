@@ -2,6 +2,10 @@
     background-color: #37A7D8;
     padding: 56px 24px;
 
+    &__decoration{
+        display: none;
+    }
+
     &__info{
         display: flex;
         flex-direction: column;
@@ -132,6 +136,23 @@
 @media screen and (min-width: 768px){
     .contact-section{
         padding: 56px 0;
+        background: url(/img/contact-bg@2x.png);
+        position: relative;
+        background-size: cover;
+        background-position: bottom;
+
+        &__decoration{
+            display: block;
+            position: relative;
+
+            &-cloud--1{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                width: 4rem;
+                height: 15rem;
+            }
+        }
 
         &__info{
             flex-basis: 48%;
@@ -167,3 +188,11 @@
         }
     }
 }
+
+@media screen and (min-width: 560px) and (max-width: 810px){
+    .contact-section__info{
+        flex-basis: 60%;
+    }
+
+}
+

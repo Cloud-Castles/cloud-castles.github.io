@@ -1,6 +1,8 @@
 .technology-section{
     background-color: #37A7D8;
     padding-bottom: 3.5em;
+    background: url(/img/technology-bg.png), #37A7D8;
+    background-size: cover;
 
     &__top{
         display: flex;
@@ -192,4 +194,12 @@
         }
     }
     
+}
+
+@media screen and (min-width: 768px) and (max-width: 1160px){
+    .technology-section{
+        &__tool-block:not(:last-child)::after {   
+            width: 100%;
+        }
+    }
 }

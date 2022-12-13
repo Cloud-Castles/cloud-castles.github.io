@@ -516,6 +516,51 @@ header.main-header {
   display: block;
   width: 100%; }
 
+@media screen and (min-width: 1160px) {
+  header.main-header {
+    padding: 0 20px; }
+  .main-header__menu-wrapper {
+    width: 100%;
+    flex-basis: 80%; }
+  .menu-col__logo-link {
+    display: none; }
+  .menu-col__inner {
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 0; }
+  .menu-col__elements-list {
+    order: 1;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .menu-col__hr {
+    order: 2;
+    height: 88px;
+    margin: 0 10px;
+    margin-right: 3rem;
+    border-top: 0;
+    border-top-width: 0px;
+    border-bottom: 0;
+    border-bottom-width: 0px;
+    border-left: 0;
+    border-left-width: 0px;
+    width: 4px;
+    border-width: 2px; }
+  .menu-col__language-switcher {
+    order: 3;
+    margin-right: 3rem; }
+  .menu-col__element {
+    margin-right: 3rem;
+    margin-bottom: 0 !important; }
+  .top-row__hamb-col {
+    display: none; }
+  .top-row__menu-col {
+    position: relative;
+    right: 0;
+    width: inherit;
+    top: 0; } }
+
 .top-section {
   background: #fff;
   background-image: url(/img/section-bg.png);
@@ -613,6 +658,19 @@ header.main-header {
   height: auto; }
 
 @media screen and (min-width: 768px) {
+  .about-us {
+    background-color: #37a7d8; }
+  .about-us__info-wrapper {
+    flex-basis: 50%;
+    flex-direction: row; }
+  .about-us__image-wrapper {
+    flex-basis: 50%; }
+  .about-us__image-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+@media screen and (min-width: 1140px) {
   .about-us__info {
     padding-top: 6rem;
     padding-left: 0;
@@ -657,30 +715,33 @@ header.main-header {
     .about-us__image-wrapper {
       flex-basis: 48%; } }
 
-.services-section__top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3.5rem 1.5rem 2rem;
-  width: 100%; }
-  .services-section__top-title {
-    color: var(--color-blue400);
-    letter-spacing: 4px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.641rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0; }
-  .services-section__top-heading {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 15px;
-    color: var(--color-black);
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 0;
-    margin: 0; }
+.services-section {
+  background: url(/img/services-bg.png);
+  background-size: cover; }
+  .services-section__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 1.5rem 2rem;
+    width: 100%; }
+    .services-section__top-title {
+      color: var(--color-blue400);
+      letter-spacing: 4px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.641rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0; }
+    .services-section__top-heading {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 15px;
+      color: var(--color-black);
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0;
+      margin: 0; }
 
 .services-list {
   display: flex;
@@ -768,9 +829,15 @@ header.main-header {
       .services-list__el:nth-child(1) .services-list__el-heading {
         max-width: 220px; } }
 
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+  .services-list {
+    justify-content: space-evenly; } }
+
 .technology-section {
   background-color: #37A7D8;
-  padding-bottom: 3.5em; }
+  padding-bottom: 3.5em;
+  background: url(/img/technology-bg.png), #37A7D8;
+  background-size: cover; }
   .technology-section__top {
     display: flex;
     flex-direction: column;
@@ -891,6 +958,10 @@ header.main-header {
     margin-bottom: 0.75rem; }
   .tool-block__description--list {
     margin-bottom: 2rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+  .technology-section__tool-block:not(:last-child)::after {
+    width: 100%; } }
 
 .sosivio-section {
   margin-bottom: 3.5rem; }
@@ -1078,9 +1149,25 @@ header.main-header {
     text-align: left;
     margin-bottom: 1rem; } }
 
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+  .team-section__list {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .team-section__list-item {
+      flex-basis: 42%; } }
+
+@media screen and (min-width: 810px) and (max-width: 1160px) {
+  .team-item__image-wrapper::before {
+    width: 75%;
+    left: 0;
+    right: 0;
+    margin: auto; } }
+
 .contact-section {
   background-color: #37A7D8;
   padding: 56px 24px; }
+  .contact-section__decoration {
+    display: none; }
   .contact-section__info {
     display: flex;
     flex-direction: column;
@@ -1162,7 +1249,20 @@ header.main-header {
 
 @media screen and (min-width: 768px) {
   .contact-section {
-    padding: 56px 0; }
+    padding: 56px 0;
+    background: url(/img/contact-bg@2x.png);
+    position: relative;
+    background-size: cover;
+    background-position: bottom; }
+    .contact-section__decoration {
+      display: block;
+      position: relative; }
+      .contact-section__decoration-cloud--1 {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 4rem;
+        height: 15rem; }
     .contact-section__info {
       flex-basis: 48%;
       flex-direction: row;
@@ -1184,6 +1284,10 @@ header.main-header {
         flex-direction: column; }
     .contact-section__submit-wrapper {
       width: 117px; } }
+
+@media screen and (min-width: 560px) and (max-width: 810px) {
+  .contact-section__info {
+    flex-basis: 60%; } }
 
 .careers-list {
   background: #F3FBFF;
@@ -1297,6 +1401,33 @@ header.main-header {
       text-align: center;
       text-decoration: none; }
 
+@media screen and (min-width: 768px) {
+  .careers-list {
+    margin-bottom: 0;
+    padding-bottom: 3.5rem; }
+  .job-posting__meta {
+    margin-bottom: 1rem; }
+  .job-posting__title {
+    margin-bottom: 2.5rem; }
+    .job-posting__title-heading {
+      font-size: 3rem;
+      line-height: 3.5rem; }
+  .job-posting__description {
+    margin-bottom: 2.5rem; }
+  .job-posting__list-items {
+    display: flex;
+    flex-wrap: wrap; }
+    .job-posting__list-items:not(:last-child) {
+      margin-bottom: 3.625rem; }
+  .job-posting__list-item {
+    flex-basis: 29%;
+    max-width: 370px; }
+    .job-posting__list-item:not(:last-child)::after {
+      display: none; }
+  .job-posting__button {
+    display: inline-block;
+    width: 172px; } }
+
 .simple-section__col:not(:last-child) {
   margin-bottom: 3.5rem; }
 
@@ -1327,6 +1458,26 @@ header.main-header {
   margin-bottom: 2rem; }
   .simple-section__text-wrapper p:not(:last-child) {
     margin-bottom: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .simple-section__col {
+    display: flex;
+    flex-basis: 50%; }
+    .simple-section__col:not(:last-child) {
+      margin-bottom: 0; }
+    .simple-section__col > .simple-section__text-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      max-width: 494px;
+      margin: auto; }
+  .simple-section__heading {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1.5rem; }
+  .simple-section__text-wrapper {
+    max-width: 494px; } }
 
 .simple-service {
   padding: 3.5rem 0; }
@@ -1373,6 +1524,38 @@ header.main-header {
         height: 1.5rem;
         background: url(../svg/circle-check.svg) no-repeat;
         background-size: contain; }
+
+@media screen and (min-width: 768px) {
+  .simple-service {
+    padding: 4.5rem 0; }
+    .simple-service__heading {
+      font-size: 3rem;
+      line-height: 3.5rem; }
+    .simple-service__list {
+      margin-bottom: 3rem; }
+      .simple-service__list-items {
+        display: flex;
+        justify-content: space-between; }
+      .simple-service__list-item {
+        flex-basis: 21%; }
+        .simple-service__list-item:not(:last-child):after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0px;
+          left: initial;
+          width: 1px;
+          height: 100%;
+          border-right: 1px dashed #88B7CE; }
+    .simple-service__simple-service__text-wrapper {
+      font-family: 'Nunito';
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #14142B; } }
+
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+  .simple-service__list-item:not(:last-child)::after {
+    right: 5px; } }
 
 .main-footer__inner {
   margin-top: 2.875rem; }

@@ -61,6 +61,7 @@
                 background-repeat: no-repeat;
                 background-position: bottom;
             }
+
         }
 
         &-img{
@@ -161,6 +162,31 @@
         &__meta-position{
             text-align: left;
             margin-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1160px){
+    .team-section{
+        &__list{
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            &-item{
+                flex-basis: 42%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1160px){
+    .team-item{
+        
+        &__image-wrapper::before {
+            width: 75%;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
     }
 }

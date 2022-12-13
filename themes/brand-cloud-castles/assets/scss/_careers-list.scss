@@ -164,3 +164,55 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .careers-list{
+        margin-bottom: 0;
+        padding-bottom: 3.5rem;
+    }
+
+    .job-posting{
+        
+        &__meta{
+            margin-bottom: 1rem;
+        }
+
+        &__title{
+            margin-bottom: 2.5rem;
+
+            &-heading{
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+        }
+
+        &__description{
+            margin-bottom: 2.5rem;
+        }
+
+        &__list{
+            &-items{
+                display: flex;
+                flex-wrap: wrap;
+
+                &:not(:last-child){
+                    margin-bottom: 3.625rem;
+                }
+            }
+
+            &-item{
+                flex-basis: 29%;
+                max-width: 370px;
+
+                &:not(:last-child)::after {
+                    display: none;
+                }
+            }
+        }
+
+        &__button{
+            display: inline-block;
+            width: 172px;
+        }
+    }
+}

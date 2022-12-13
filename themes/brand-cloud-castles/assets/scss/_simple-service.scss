@@ -66,3 +66,54 @@
         }
     }
 }
+
+@media screen and (min-width: 768px){
+    .simple-service{
+        padding: 4.5rem 0;
+
+        &__heading{
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+
+        &__list{
+            margin-bottom: 3rem;
+
+            &-items{
+                display: flex;    
+                justify-content: space-between;
+            }
+
+            &-item{
+                flex-basis: 21%;
+
+                &:not(:last-child):after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0px;
+                    left: initial;
+                    width: 1px;
+                    height: 100%;
+                    border-right: 1px dashed #88B7CE;
+                }
+            }
+        }
+
+        &__simple-service__text-wrapper{
+            font-family: 'Nunito';
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: #14142B;
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1160px){
+    .simple-service{
+        &__list-item:not(:last-child)::after {
+            right: 5px;
+        }
+    }
+}
