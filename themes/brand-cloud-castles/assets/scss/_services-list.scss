@@ -1,5 +1,5 @@
 .services-section{
-    background: url(/img/services-bg.png);
+    // background: url(/img/services-bg.png);
     background-size: cover;
 
     &__top{
@@ -52,7 +52,6 @@
             margin-bottom: 1.5rem;
             display: flex;
             flex-wrap: wrap;
-            height: 400px;
             box-sizing: border-box;
 
             &-heading{
@@ -140,6 +139,7 @@
             &__el{
                 max-width: 360px;
                 margin-bottom: 2.5rem;
+                height: 400px;
 
                 &--empty{
                     min-width: 360px;
