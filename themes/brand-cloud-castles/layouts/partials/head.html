@@ -1,5 +1,41 @@
 {{/* DEFAULT META */}}
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+{{$title := ""}}    
+{{ $title = .Site.Title }}
+{{ $title = printf "%s - %s" .Title $title }}
+{{ $description := "" }}
+{{ $description = .Site.Params.description }}
+{{ $description := "The future is in our hands to shape" }}
+
+{{$pageCover := ""}}
+{{if .Params.image}}
+  {{$pageCover = .Params.image | relLangURL }}
+{{else}}
+  {{$pageCover = "https://cloud-castles.com/img/default-page-cover.png" }}
+{{end}}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{$description}}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{.Permalink}}">
+<meta property="og:title" content="{{$title}}">
+<meta property="og:description" content="{{$description}}">
+<meta property="og:image" content="{{$pageCover}}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{.Permalink}}">
+<meta property="twitter:title" content="{{$title}}">
+<meta property="twitter:description" content="{{$description}}">
+<meta property="twitter:image" content="{{$pageCover}}">
+
+{{/* FAVICONS */}}
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
 
 {{/* CORE CSS */}}
 {{- $css := resources.Get "scss/style.scss" | toCSS | resources.PostCSS -}}

@@ -23,6 +23,7 @@
       "section",
       "span",
       "textarea",
+      "title",
       "ul"
     ],
     "classes": [
@@ -89,6 +90,7 @@
       "job-posting__meta-text",
       "job-posting__title",
       "job-posting__title-heading",
+      "lazy",
       "main-footer",
       "main-footer__contact",
       "main-footer__contact-link",
@@ -104,6 +106,8 @@
       "main-header__menu-wrapper",
       "menu-col__element",
       "menu-col__element-anchor",
+      "menu-col__element-anchor--current",
+      "menu-col__element-anchor--currentmenu-col__element-anchor",
       "menu-col__elements-list",
       "menu-col__hr",
       "menu-col__inner",

@@ -16,7 +16,7 @@
                 {{- range .team -}}
                     <div class="team-section__list-item">
                         <div class="team-item__image-wrapper">
-                            <img src="{{- .image -}}" alt="{{- .name -}}" class="team-item__image-img">
+                            <img data-src="{{- .image -}}" alt="{{- .name -}}" class="team-item__image-img lazy">
                         </div>
                         <div class="team-item__meta-wrapper">
                             <h4 class="team-item__meta-name">
