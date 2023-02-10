@@ -1,16 +1,16 @@
 ---
-title: 'Infrastructure as a code'
+title: 'Infrastructure as Code'
 
 sections:
     - type: sections/top-section
       image: /svg/castle.svg
-      heading: 'Infrastructure as a code'
+      heading: 'Infrastructure as Code'
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at erat curabitur in interdum. Vitae augue semper in purus tincidunt lectus sed etiam. Amet morbi nibh aliquet.'
-      moveTo: '#iaas'
+      moveTo: '#iac'
 
     - type: sections/simple-service
-      sectionId: iaas
-      heading: 'Infrastructure as a code'
+      sectionId: iac
+      heading: 'Infrastructure as Code'
       list:
           icon: 'cloud'
           items:

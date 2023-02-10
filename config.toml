@@ -27,8 +27,8 @@ theme = 'brand-cloud-castles'
 
 [menu]
   [[menu.main]]
-    name = "IaaS"
-    url = "/iaas/"
+    name = "IaC"
+    url = "/iac/"
     weight = 1
   [[menu.main]]
     name = "Sosivio"

@@ -27,7 +27,7 @@ sections:
       title: 'Services'
       heading: 'What do we offer'
       list:
-          - title: 'Infrastructure as a code'
+          - title: 'Infrastructure as Code'
             sublist:
                 - el: Cloud infrastructure design, architecture and implementation from scratch
                 - el: On-prem to cloud migration
