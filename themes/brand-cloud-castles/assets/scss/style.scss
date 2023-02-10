@@ -133,8 +133,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1160px;
+    width: 100%;
+    margin: auto;
 }
-
 
 @import "_header.scss";
 @import "_top-section.scss";
