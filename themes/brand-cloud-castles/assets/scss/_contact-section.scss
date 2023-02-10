@@ -13,6 +13,10 @@
         margin-bottom: 2rem;
         gap: 10px;
 
+        > div {
+            background-color: #37A7D8CC;
+            padding-bottom: 8px;
+        }
         &-title{
             color: var(--color-blue100);
             letter-spacing: 4px;
