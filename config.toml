@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Cloud Castles'
 theme = 'brand-cloud-castles'
 
+googleAnalytics = 'G-1EF7F5FSMP'
+
 [build]
   writeStats = true
 
@@ -21,7 +23,6 @@ theme = 'brand-cloud-castles'
   googleplus = 'Cloud Castles'
   email = 'contact@cloud-castles.com'
   rss = 'Cloud Castles'
-  googleAnalytics = 'Cloud Castles'
   disqusShortname = 'Cloud Castles'
   enableRobotsTXT = true
 
