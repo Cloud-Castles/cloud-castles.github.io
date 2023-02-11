@@ -1,26 +1,21 @@
 <section class="about-us" id="{{- .sectionId -}}">
     <div class="row">
-        <div class="about-us__info-wrapper">
-            <div class="about-us__info">
-                <div class="about-us__info-title">
-                    <h3 class="about-us__title-heading">
-                        {{- .title -}}
-                    </h3>
-                </div>
-                <div class="about-us__info-headline">
-                    <h2 class="about-us__headline-heading">
-                        {{- .heading -}}
-                    </h2>
-                </div>
-                <div class="about-us__info-description">
-                    {{- .description | markdownify -}}
-                </div>
-
+        <div class="about-us__info">
+            <div class="about-us__info-title">
+                <h3 class="about-us__info-title-heading">
+                    {{- .title -}}
+                </h3>
+            </div>
+            <div class="about-us__info-headline">
+                <h2 class="about-us__info-headline-heading">
+                    {{- .heading -}}
+                </h2>
+            </div>
+            <div class="about-us__info-description">
+                {{- .description | markdownify -}}
             </div>
         </div>
-        <div class="about-us__image-wrapper">
-            <img class="about-us__image-img lazy" data-src="{{- .image -}}" alt="{{- .heading -}}">
-        </div>
+        <img class="about-us__image-img lazy" data-src="{{- .image -}}" alt="{{- .heading -}}">
     </div>
 </section>
 
