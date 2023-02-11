@@ -4,7 +4,7 @@ title: 'Sosivio'
 sections:
     - type: sections/top-section
       image: /svg/full-sosivio.svg
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel molestie in nunc, duis varius vitae nec. Elementum nibh varius maecenas ipsum id urna quis. Id neque a vel egestas.'
+      description: 'Eliminate ambiguity in Kubernetes with a tightly coupled data collection and AI tool. Predict and prevent performance issues with your applications and orchestration issues with your environments.'
       moveTo: '#sosivio'
 
     - type: sections/simple-section

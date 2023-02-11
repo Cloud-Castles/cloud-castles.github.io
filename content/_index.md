@@ -120,7 +120,7 @@ sections:
       text: 'Sosivio is a Predictive Troubleshooting Platform for Kubernetes in the DevOps and Cloud Security space. We predict and prevent issues with cloud-based applications and services using machine learning. This could be anything from slowness on a website to crashing applications to any number of customer facing issues. These issues cause bad customer experience, lost revenue, and even substantial fines in the cases of some of our banking clients. We prevent these issues from ever occurring by catching the earliest hidden signs and offering the recommended fix before the problem materializes...'
       button:
           text: 'Learn more'
-          moveTo: '#'
+          moveTo: '/sosivio'
 
     - type: 'sections/team-section'
       title: 'Executive Team'
