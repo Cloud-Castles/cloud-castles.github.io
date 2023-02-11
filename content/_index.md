@@ -33,41 +33,26 @@ sections:
                 - el: On-prem to cloud migration
                 - el: Hybrid solutions
                 - el: Cloud security - network, policies, identity
-            button:
-                text: 'Learn more'
-                moveTo: '#'
           - title: 'Complex on-prem infrastructure'
             sublist:
                 - el: Openstack deployment and management
                 - el: Bare-metal deployment
                 - el: Org network engineering
-            button:
-                text: 'Learn more'
-                moveTo: '#'
           - title: 'CI/CD, deployment and delivery'
             sublist:
                 - el: Openstack deployment and management
                 - el: Artifact management
                 - el: Secure development. security scanning and processes integrated into the development cycle
-            button:
-                text: 'Learn more'
-                moveTo: '#'
 
           - title: 'Logging and monitoring solutions'
             sublist:
                 - el: ELK stack deployment and configuration, log parsers, dashboards and reporting
                 - el: Centralized monitoring and metrics using various tools (prometheus/grafana, opsview, zabbix)
-            button:
-                text: 'Learn more'
-                moveTo: '#'
 
           - title: 'Operations automation'
             sublist:
                 - el: Automated system configuration - windows, linux and hybrid environments
                 - el: IT workflow automation. self service portal, auto-remediation of IT incidents, chatops
-            button:
-                text: 'Learn more'
-                moveTo: '#'
 
     - type: 'sections/technology-section'
       sectionId: technology
