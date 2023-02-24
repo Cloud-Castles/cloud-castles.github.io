@@ -113,7 +113,7 @@ sections:
       team:
           - name: 'Gil Bartor'
             position: '(CEO & Founder)'
-            image: /img/team/gil-bartor.png
+            image: /img/team/gb1.png
             linkedin: 'https://www.linkedin.com/in/gil-bartor-6759481/'
             description: |
                 IT entrepreneur and executive with a solid background in information technology business, Project Management and Business Administration. 
@@ -126,7 +126,7 @@ sections:
 
           - name: 'Vadim Romanov'
             position: '(CTO & Founder)'
-            image: /img/team/vadim-romanov.png
+            image: /img/team/vr1.png
             linkedin: 'https://www.linkedin.com/in/vadim-romanov-11562334/'
             description: |
                 IT vetaran and executive with a solid background in information technology & Project Management.  
@@ -139,7 +139,7 @@ sections:
 
           - name: 'Tom Porat'
             position: '(VP & Founder)'
-            image: /img/team/vadim-romanov.png
+            image: /img/team/tp1.png
             linkedin: 'https://www.linkedin.com/in/tomporatxyz/'
             description: |
                 Developer & IT vetaran with a strong background in software development, primerly, for IT infrastructure space.
