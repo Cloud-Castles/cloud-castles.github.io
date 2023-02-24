@@ -27,15 +27,15 @@ googleAnalytics = 'G-1EF7F5FSMP'
   enableRobotsTXT = true
 
 [menu]
-  [[menu.main]]
-    name = "IaC"
-    url = "/iac/"
-    weight = 1
+#  [[menu.main]]
+#    name = "IaC"
+#    url = "/iac/"
+#    weight = 1
   [[menu.main]]
     name = "Sosivio"
     url = "/sosivio/"
     weight = 2
-  [[menu.main]]
-    name = "Careers"
-    url = "/careers/"
-    weight = 5
+#  [[menu.main]]
+#    name = "Careers"
+#    url = "/careers/"
+#    weight = 5
